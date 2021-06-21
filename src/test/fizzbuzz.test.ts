@@ -14,5 +14,6 @@ describe('Fizz Buzz', () => {
     it('should print number as a string', () => {
 
         expect(fizzbuzzOf(1)).toBe('1')
+        expect(fizzbuzzOf(2)).toBe('2')
     })
 })
