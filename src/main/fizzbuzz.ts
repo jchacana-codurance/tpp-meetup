@@ -1,3 +1,3 @@
 export function fizzbuzzOf(number: number) {
-    return undefined;
+    return '1';
 }
