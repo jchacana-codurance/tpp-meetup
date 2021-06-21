@@ -15,5 +15,6 @@ describe('Fizz Buzz', () => {
 
         expect(fizzbuzzOf(1)).toBe('1')
         expect(fizzbuzzOf(2)).toBe('2')
+        expect(fizzbuzzOf(4)).toBe('4')
     })
 })
