@@ -1,3 +1,5 @@
+import {fizzbuzzOf} from "../main/fizzbuzz";
+
 /**
  * Write a function that takes numbers from 1 to 100 and outputs them as a string,
  * but:
