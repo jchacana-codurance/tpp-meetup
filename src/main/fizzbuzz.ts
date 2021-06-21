@@ -2,9 +2,13 @@ function isMultipleOf3(number: number) {
     return number % 3 === 0;
 }
 
+function isMultipleOf5(number: number) {
+    return number % 5 === 0;
+}
+
 export function fizzbuzzOf(number: number) {
-    if( number % 5 === 0 && isMultipleOf3(number)) return 'fizzbuzz'
-    if (number % 5 === 0) return 'buzz'
+    if( isMultipleOf5(number) && isMultipleOf3(number)) return 'fizzbuzz'
+    if( isMultipleOf5(number)) return 'buzz'
     if( isMultipleOf3(number)) return 'fizz'
     return number.toString()
 }
