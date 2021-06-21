@@ -20,5 +20,6 @@ describe('Fizz Buzz', () => {
 
     it('should print `fizz` when getting multiples of 3', () => {
         expect(fizzbuzzOf(3)).toBe('fizz')
+        expect(fizzbuzzOf(6)).toBe('fizz')
     })
 })
