@@ -12,4 +12,8 @@ describe('Roman Numerals', () => {
     it('should return `V` when passing 5', () => {
         expect(romanConverter(5)).toBe('V')
     })
+
+    it('should return `X` when passing 10', () => {
+        expect(romanConverter(10)).toBe('X')
+    })
 })
