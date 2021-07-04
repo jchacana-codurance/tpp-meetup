@@ -20,4 +20,8 @@ describe('Roman Numerals', () => {
     it("should return 'IV' when passing 4", () => {
         expect(romanConverter(4)).toBe('IV')
     })
+
+    it("should return 'V' when passing 5", () => {
+        expect(romanConverter(5)).toBe('V')
+    })
 })
