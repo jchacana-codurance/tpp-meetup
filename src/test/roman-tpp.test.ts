@@ -9,7 +9,7 @@ describe('Roman Numerals', () => {
         expect(romanConverter(1)).toBe('I')
     })
 
-    it.skip("should return 'II' when passing 2", () => {
+    it("should return 'II' when passing 2", () => {
         expect(romanConverter(2)).toBe('II')
     })
 
