@@ -4,12 +4,20 @@ const symbols: Record<number, string> = {
     4: 'IV',
     5: 'V'
 }
-export function romanConverter(number: number): string {
+
+function getKey(number: number): number {
     if(number >= 5)
-        return symbols[5] + romanConverter(number - 5);
+        return 5;
     if(number >= 4)
-        return symbols[4] + romanConverter(number - 4);
+        return 4;
     if(number >= 1)
-        return symbols[1] + romanConverter(number - 1);
-    return symbols[0];
+        return 1;
+    return 0;
+}
+
+export function romanConverter(number: number): string {
+    const key = getKey(number)
+    if(key === 0)
+        return symbols[0];
+    return symbols[key] + romanConverter(number - key);
 }
