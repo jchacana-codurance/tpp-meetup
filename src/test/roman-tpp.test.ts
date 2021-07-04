@@ -5,7 +5,7 @@ describe('Roman Numerals', () => {
         expect(romanConverter(0)).toBe('')
     })
 
-    it.skip("should return 'I' when passing 1", () => {
+    it("should return 'I' when passing 1", () => {
         expect(romanConverter(1)).toBe('I')
     })
 
