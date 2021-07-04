@@ -1,5 +1,5 @@
-export function romanConverter(number: number) {
+export function romanConverter(number: number): string {
     if(number === 1)
-        return 'I';
+        return 'I' + romanConverter(0);
     return '';
 }
