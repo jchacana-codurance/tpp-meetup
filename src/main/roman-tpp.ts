@@ -5,14 +5,10 @@ const symbols: Record<number, string> = {
     5: 'V'
 }
 
+const keys = Object.keys(symbols).map(key => Number(key)).reverse()
+
 function getKey(number: number): number {
-    if(number >= 5)
-        return 5;
-    if(number >= 4)
-        return 4;
-    if(number >= 1)
-        return 1;
-    return 0;
+    return keys.filter(key => number >= key)[0];
 }
 
 export function romanConverter(number: number): string {
