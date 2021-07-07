@@ -4,6 +4,7 @@ const symbols: Record<number, string> = {
     4: 'IV',
     5: 'V',
     9: 'IX',
+    10: 'X',
 }
 
 const keys = Object.keys(symbols).map(key => Number(key)).reverse()
