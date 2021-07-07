@@ -13,6 +13,11 @@ describe('Roman Numerals', () => {
         ["VIII", 8],
         ["IX", 9],
         ["X", 10],
+        ["XII", 12],
+        ["XIV", 14],
+        ["XV", 15],
+        ["XIX", 19],
+        ["XXIII", 23],
         ]
     )("should return '%s' when passing %i", (expected: string, arg: number) => {
         expect(romanConverter(arg)).toBe(expected)
